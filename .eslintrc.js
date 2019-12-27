@@ -23,5 +23,7 @@ module.exports = {
     'react/static-property-placement': ['warn', 'static public field'],
     'react/jsx-filename-extension': [1, { extensions: ['.jsx', '.js'] }],
     'import/prefer-default-export': 'off',
+    'no-param-reassign': 'off',
+    'no-console': ["error", { allow: ["tron"] }]
   },
 };
