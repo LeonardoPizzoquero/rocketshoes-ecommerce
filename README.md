@@ -2,11 +2,11 @@ This project was made with React JS, added Redux, Redux-saga and Reactotron.
 
 # E-commerce in React JS
 
-![Print](https://github.com/LeonardoPizzoquero/rocketshoes-ecommerce/edit/master/public/ecommerce.png)
+![Print](https://github.com/LeonardoPizzoquero/rocketshoes-ecommerce/blob/master/public/eccomerce.png)
 
 # Cart with Redux and Redux Saga
 
-![Print](https://github.com/LeonardoPizzoquero/rocketshoes-ecommerce/edit/master/public/cart.png)
+![Print](https://github.com/LeonardoPizzoquero/rocketshoes-ecommerce/blob/master/public/cart.png)
 
 # Start the project
 
