@@ -5,5 +5,3 @@ const api = axios.create({
 });
 
 export default api;
-
-// Comando para iniciar o servidor: json-server server.json -p 3334 -w

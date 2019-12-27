@@ -1,0 +1,70 @@
+1- Criar uma pasta store:
+Adicionar um index.js com as configurações da store:
+
+import { createStore } from 'redux'; // Cria a loja
+
+// Importa os reducers combinados
+import rootReducer from './modules/rootReducer';
+
+// Cria a loja passando os reducers
+const store = createStore(rootReducer);
+
+export default store;
+
+2- Adicionar também o Provider no App.js passando a store como parâmetro
+
+3- Criar o reducer combiner:
+
+import { combineReducers } from 'redux';
+
+import cart from './cart/reducer';
+
+export default combineReducers({
+  cart,
+});
+
+4- Criar um reducer:
+
+export default function cart(state = [], action) {
+  switch (action.type) {
+    case 'ADD_TO_CART':
+      return [...state, action.product];
+    default:
+      return state;
+  }
+}
+
+Utilizar método dispatch para disparar a ação do reducer e atualizar
+o estado
+
+Utilizar o connect()(Nome do component) para conectar com a loja
+e conseguir usar o estado global
+
+REACTOTRON
+
+Baixar o reactotron: https://github.com/infinitered/reactotron/releases
+
+Instalar bibliotecas: yarn add reactotron-react-js reactotron-redux
+
+Criar configurações do reactotron:
+
+import Reactotron from 'reactotron-react-js';
+import { reactotronRedux } from 'reactotron-redux';
+
+if (process.env.NODE_ENV === 'development') {
+  const tron = Reactotron.configure()
+    .use(reactotronRedux())
+    .connect();
+
+  tron.clear();
+
+  console.tron = tron;
+}
+
+Instalar immer: yarn add immer
+Ele irá transformar a imutabilidade em mutabilidade para os reducers
+
+
+Adicionar REDUX SAGA: yarn add redux-saga
+
+
