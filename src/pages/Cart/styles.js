@@ -35,7 +35,7 @@ export const ProductTable = styled.table`
   thead th {
     color: #999;
     text-align: left;
-    padding: 12px
+    padding: 12px;
   }
 
   tbody td {

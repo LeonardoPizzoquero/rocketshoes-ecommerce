@@ -14,4 +14,4 @@ This project was created with create react-app, and the API is local inside serv
 
 Start the application: yarn start
 
-Start the API: json-server server.json -p 3334 -w
+Start the API: yarn dev
